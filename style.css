@@ -1,0 +1,215 @@
+.calendar-paper {
+  margin: 0px 10px 0px 10px;
+  font-weight:  500!important;
+}
+
+.calendar {
+  text-align: center;
+  background-size: cover;
+  font-weight:  500!important;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+}
+
+.previous {
+  order: 1;
+  position: relative;
+  height: 20px;
+  padding: 5px 10px 5px 0px!important;
+  width: 30px;
+  font-weight:  500!important;
+}
+
+.previous:hover {
+  color: blue;
+}
+
+.next {
+  order: 3;
+  position: relative;
+  padding: 5px 0px 5px 10px!important;
+  text-align: right!important;
+  width: 30px;
+  font-weight:  500!important;
+}
+
+.next:hover {
+  color: blue;
+}
+
+.holidays {
+  color: #C1C1EA;
+  font-weight:  500!important;
+  
+}
+
+.today {
+  color: blue;
+  font-weight:  500!important;
+  
+}
+
+.chosenDay {
+  color:#ffffff!important;
+  font-weight: 500!important;
+  cursor: pointer;
+  text-align:center!important;
+  padding-right: 28px!important;
+  border-width: 0px;
+  border-bottom-width: 2;
+  border-color: 'red';
+}
+
+.chosenDay:hover {
+  color: #d5def7!important;
+  font-weight:  500!important;
+}
+
+.header-month {
+  position: relative;
+  font-weight:  500!important;
+  color: #ffffff;
+}
+
+.header-year {
+  position: relative;
+  margin-left: 10px;
+  font-weight:  500!important;
+  color: #ffffff;
+}
+
+.calendarHeader {
+  order: 2;
+  padding: 2px!important;
+  font-weight:  600!important;
+  color: #ffffff;
+}
+
+.calendarHeader:hover {
+  color: #ada9a9;
+  font-weight:  500!important;
+}
+
+#header-position {
+  display: flex;
+  justify-content: center;
+  font-weight:  500!important;
+  color: #ffffff;
+}
+
+.header-only-year {
+  position: relative;
+}
+
+.month-tableCell:hover {
+  color: #d5def7;
+} 
+
+.thisMonth {
+  color: blue
+}
+
+.month {
+  width: 100px;
+  margin-left: 45%;
+  font-weight:  500!important;
+  color: #ffffff;
+}
+
+.clear {
+  left: 80%;
+}
+.jss111{
+  text-align: center!important;
+}
+
+table 
+{
+    table-layout:fixed;
+    width:100%;
+    background-color: #5254CB;
+    
+}
+td {
+  border-bottom: none !important;
+}
+th {
+  border-bottom: none !important;
+  color: #ffffff!important;
+}
+.App {
+  font-family: 'Calibri', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-weight:  500!important;
+  color: grey;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.elipse-text {
+    display: table-cell;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%!important;
+    background-color: #ffffff!important;
+    color: #5254CB;    
+}
+.days{
+  box-shadow: none;
+}
+.leftContainer 
+{
+  background-color: #5254CB;    
+}
+.rightContainer 
+{
+  background-color: #ffffff;
+}
+.avtarContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0 20px 0;
+}
+.buttonContainer {
+  flex-grow: 100;
+  padding: 3px;
+  display: flex;
+  float: left;
+  width: 100%;
+  padding-left: 10%;
+}
+.slotsButtonContainer {
+  flex-grow: 100;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.toggleSlotButton {
+  width: 30%!important;
+  font-size: 0.55em!important;
+  padding: 6px 4px!important;
+  min-height: 24px!important;
+}
+.slotButton{
+  border-radius: 2px;
+  border: 2px solid #d8dde3;
+  background-color: #ffffff;
+  width: 85%;
+}
+.typographyText {
+  font-size: 0.7em!important;
+  font-weight: 600!important;
+  text-align: left;
+  color: #8385ff!important;
+  padding: 0 0 5% 10%;
+}
+.slotContent{
+    max-height: 300px;
+}
