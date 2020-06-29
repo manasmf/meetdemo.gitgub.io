@@ -68,6 +68,21 @@
   font-weight:  500!important;
 }
 
+.pastdate {
+  color:#C1C1EA!important;
+  font-weight: 500!important;
+  cursor: pointer;
+  text-align:center!important;
+  padding-right: 28px!important;
+  border-width: 0px;
+  border-bottom-width: 2;
+  border-color: 'red';
+}
+.pastdate:hover {
+  color: #C1C1EA!important;
+  font-weight:  500!important;
+}
+
 .header-month {
   position: relative;
   font-weight:  500!important;
@@ -169,6 +184,7 @@ th {
 .rightContainer 
 {
   background-color: #ffffff;
+  max-width: 300px;
 }
 .avtarContainer {
     display: flex;
@@ -208,8 +224,11 @@ th {
   font-weight: 600!important;
   text-align: left;
   color: #8385ff!important;
-  padding: 0 0 5% 10%;
+  padding: 0 0 0% 10%;
+}
+.scrollContent{
+  height: 330px!important;
 }
 .slotContent{
-    max-height: 300px;
+  max-height: 60%!important;
 }
