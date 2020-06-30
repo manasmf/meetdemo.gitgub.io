@@ -379,7 +379,7 @@ border-bottom-right-radius: 5%;
 
 @media only screen and (min-width: 758px) {
   .scrollContent{
-    height: 271px!important;
+    height: 275px!important;
     border-top-right-radius: 9%;
   }
 }
