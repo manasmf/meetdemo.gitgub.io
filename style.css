@@ -42,8 +42,7 @@
 
 .holidays {
   color: #C1C1EA;
-  font-weight:  500!important;
-  
+  font-weight:  500!important;   
 }
 
 .today {
@@ -57,7 +56,7 @@
   font-weight: 500!important;
   cursor: pointer;
   text-align:center!important;
-  padding-right: 28px!important;
+  padding: 0px 0px 0px 0px!important;
   border-width: 0px;
   border-bottom-width: 2;
   border-color: 'red';
@@ -73,10 +72,8 @@
   font-weight: 500!important;
   cursor: pointer;
   text-align:center!important;
-  padding-right: 28px!important;
   border-width: 0px;
-  border-bottom-width: 2;
-  border-color: 'red';
+  padding: 0px!important;
 }
 .pastdate:hover {
   color: #C1C1EA!important;
@@ -84,6 +81,7 @@
 }
 
 .header-month {
+  font-size: 1rem;
   position: relative;
   font-weight:  500!important;
   color: #ffffff;
@@ -128,7 +126,7 @@
 }
 
 .month {
-  width: 100px;
+  width: 600px;
   margin-left: 45%;
   font-weight:  500!important;
   color: #ffffff;
@@ -165,26 +163,42 @@ th {
 }
 
 .elipse-text {
-    display: table-cell;
     height: 24px;
-    width: 24px;
+    line-height: 24px;
     text-align: center;
     vertical-align: middle;
     border-radius: 50%!important;
     background-color: #ffffff!important;
-    color: #5254CB;    
+    color: #5254CB;
+    margin: 0 13px 0 14px!important;
 }
 .days{
   box-shadow: none;
 }
 .leftContainer 
 {
-  background-color: #5254CB;    
+  background-color: #5254CB;
+  -moz-border-radius-topleft: 5%;
+	-webkit-border-top-left-radius: 5%;
+  border-top-left-radius: 5%;
+  
+  -moz-border-radius-bottomleft: 5%;
+	-webkit-border-bottom-left-radius: 5%;
+	border-bottom-left-radius: 5%;
 }
-.rightContainer 
+.scrollbarInnerContainer 
 {
   background-color: #ffffff;
   max-width: 300px;
+}
+.rightContainer
+{
+-moz-border-radius-topright: 5%;
+-webkit-border-top-right-radius: 5%;
+border-top-right-radius: 5%;
+-moz-border-radius-bottomright: 5%;
+-webkit-border-bottom-right-radius: 5%;
+border-bottom-right-radius: 5%;
 }
 .avtarContainer {
     display: flex;
@@ -198,25 +212,37 @@ th {
   display: flex;
   float: left;
   width: 100%;
-  padding-left: 10%;
+  padding-left: 5%;
 }
 .slotsButtonContainer {
   flex-grow: 100;
   padding: 3px;
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 100%;  
 }
-.toggleSlotButton {
+.toggleSlotButtonLeft {
+  background-color: #f9fbfc!important;
   width: 30%!important;
   font-size: 0.55em!important;
   padding: 6px 4px!important;
   min-height: 24px!important;
+  border-radius: 5px 0px 0px 5px!important;
+  text-transform: none!important;
+}
+.toggleSlotButtonRight {
+  background-color: #f9fbfc!important;
+  width: 30%!important;
+  font-size: 0.55em!important;
+  padding: 6px 4px!important;
+  min-height: 24px!important;
+  border-radius: 0px 5px 5px 0px!important;
+  text-transform: none!important;
 }
 .slotButton{
   border-radius: 2px;
-  border: 2px solid #d8dde3;
-  background-color: #ffffff;
+  border: 2px solid #427cc4;
+  background-color: #427cc4;
   width: 85%;
 }
 .typographyText {
@@ -224,11 +250,237 @@ th {
   font-weight: 600!important;
   text-align: left;
   color: #8385ff!important;
-  padding: 0 0 0% 10%;
+  padding: 0 0 0% 5%;
 }
 .scrollContent{
   height: 330px!important;
+  border-top-right-radius:5%;
 }
 .slotContent{
   max-height: 60%!important;
+}
+.daysTable{
+  width: 99%;
+  border-radius: 5%;
+  -moz-border-radius-bottomleft: 5%;
+  -webkit-border-bottom-left-radius: 5%;
+}
+
+.mainContainer {
+  width: 60%!important;
+  top: 20px;
+  margin: auto;
+  position: absolute;
+  background-color: transparent!important;
+  justify-content: center;
+}
+
+.appTitle{
+  font-size: 3.5rem!important;
+  text-align: center;
+  font-weight: 500!important;
+  margin: 10px 0 30px 0!important;
+  color: #0a3a81!important;
+}
+
+.innerContainer {
+  width: 100%;
+  border-radius: 5%!important; 
+}
+
+
+@media only screen and (max-width: 767px) {
+  .innerContainer {
+    
+    -moz-border-radius-topleft: 5%;
+    -webkit-border-top-left-radius: 5%;
+
+    -moz-border-radius-bottomleft: 5%;
+    -webkit-border-bottom-left-radius: 5%;
+
+    -moz-border-radius-topright: 5%;
+    -webkit-border-top-right-radius: 5%;
+
+    -moz-border-radius-bottomright: 5%;
+    -webkit-border-bottom-right-radius: 5%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+  }
+  .mainContainer {
+    width: 100%!important;
+    top: 0px;
+    justify-content: center;
+  }
+  .scrollContent{
+    -moz-border-radius-bottomright: 5%;
+    -webkit-border-bottom-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    -moz-border-radius-bottomleft: 5%;
+    -webkit-border-bottom-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+  }
+  .appTitle {
+    font-size: 2.0rem!important;
+    margin: 0px 0 0px 0!important;
+  }
+  .scrollContent{
+    border-top-right-radius:5%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .innerContainer {
+    
+    -moz-border-radius-topleft: 5%;
+    -webkit-border-top-left-radius: 5%;
+
+    -moz-border-radius-bottomleft: 5%;
+    -webkit-border-bottom-left-radius: 5%;
+
+    -moz-border-radius-topright: 5%;
+    -webkit-border-top-right-radius: 5%;
+
+    -moz-border-radius-bottomright: 5%;
+    -webkit-border-bottom-right-radius: 5%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .elipse-text {
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      vertical-align: middle;
+      border-radius: 50%!important;
+      background-color: #ffffff!important;
+      color: #5254CB;
+      margin: 0 16px 0 15px!important;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .holidays {
+    text-align: center!important;
+  }
+  .elipse-text {
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      vertical-align: middle;
+      border-radius: 50%!important;
+      background-color: #ffffff!important;
+      color: #5254CB;
+      margin: 5px 20px 0 20px!important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .elipse-text {
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      vertical-align: middle;
+      border-radius: 50%!important;
+      background-color: #ffffff!important;
+      color: #5254CB;
+      margin: 0 9px 0 7px!important;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .elipse-text {
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      vertical-align: middle;
+      border-radius: 50%!important;
+      background-color: #ffffff!important;
+      color: #5254CB;
+      margin: 1px 16px 0 16px!important;
+  }
+  .daysTable{
+    width: 99%;
+    border-radius: 5%;
+    -moz-border-radius-topleft: 5%;
+    -webkit-border-bottom-left-radius: 0%;
+  }
+  .leftContainer{
+    background-color: #5254CB;
+    -moz-border-radius-topleft: 5%;
+    -webkit-border-top-left-radius: 5%;
+    border-top-left-radius: 5%;    
+    -moz-border-radius-topright: 5%;
+    -webkit-border-top-right-radius: 5%;
+    border-top-right-radius: 5%;
+  }  
+}
+
+@media only screen and (max-width: 411px) {
+  .elipse-text {
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      vertical-align: middle;
+      border-radius: 50%!important;
+      background-color: #ffffff!important;
+      color: #5254CB;
+      margin: 1px 16px 0 16px!important;
+
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .elipse-text {
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      vertical-align: middle;
+      border-radius: 50%!important;
+      background-color: #ffffff!important;
+      color: #5254CB;
+      margin: 1px 17px 0 18px!important;
+
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .elipse-text {
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      vertical-align: middle;
+      border-radius: 50%!important;
+      background-color: #ffffff!important;
+      color: #5254CB;
+      margin: 0px 15px 0 14px!important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .elipse-text {
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      vertical-align: middle;
+      border-radius: 50%!important;
+      background-color: #ffffff!important;
+      color: #5254CB;
+      margin: 0px 12px 0 10px!important;
+  }
+}
+
+.dayHeaderCell{
+  color:#ffffff!important;
+  font-weight: 500!important;
+  cursor: pointer;
+  text-align:center!important;
+  padding: 0px 0px 0px 0px!important;
+}
+
+.dayHeaderCellHolidays{
+  text-align:center!important;
+  padding:0px!important;
 }
