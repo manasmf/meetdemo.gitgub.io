@@ -22,6 +22,7 @@
   width: 25%;
   cursor: pointer;
   font-weight:  500!important;
+  text-align: right!important;
 }
 
 .previous:hover {
@@ -58,7 +59,7 @@
   font-weight: 500!important;
   cursor: pointer;
   text-align:center!important;
-  padding: 0px 0px 0px 0px!important;
+  padding: 16px!important;
   border-width: 0px;
   border-bottom-width: 2;
 }
@@ -275,6 +276,19 @@ border-bottom-right-radius: 5%;
   justify-content: center;
 }
 
+.closeTimeZoneSelector{
+  opacity: 0.6;
+  width: 18;
+  height: 18;
+}
+
+.headerTimeZoneSelector{
+  border-bottom: 1px solid #e1e4e8;
+  padding: 8px 10px;
+  font-weight: 600;
+  text-align: right;
+}
+
 .appTitle{
   font-size: 3.5rem!important;
   text-align: center;
@@ -288,7 +302,40 @@ border-bottom-right-radius: 5%;
   border-radius: 5%!important; 
 }
 
+.popper {
+  border: 1px solid rgba(27,31,35,.15);
+  box-shadow: 0 3px 12px rgba(27,31,35,.15);
+  border-radius: 3;
+  width: 250px;
+  z-index: 1;
+  font-size: 13;
+  color: #586069;
+  background-color: #f6f8fa;
+}
 
+.timeZoneSelector {
+  font-size: 13px;
+  width: 80%;
+  text-align: left;
+  padding: 5px 0px 10px 0!important;
+  margin-left: 8%!important;
+  color: #0366d6!important;
+  font-weight: 600;
+}
+
+.timeZoneSelector:hover {
+  color: #0366d6;
+}
+.timeZoneSelector:focus {
+  color: #0366d6;
+}
+.timeZoneSelector span {
+  width: 100%;
+}
+.timeZoneSelector:svg {
+  width: 16px;
+  height: 16px;
+}
 
 @media only screen and (min-width: 1025px) {
   .holidays {
@@ -297,12 +344,13 @@ border-bottom-right-radius: 5%;
   .elipse-text {
       height: 23px;
       line-height: 23px;
+      width: 23px;
       text-align: center;
       vertical-align: middle;
       border-radius: 50%!important;
       background-color: #ffffff!important;
       color: #5254CB;
-      margin: 1px 23px 0 22px!important;
+      margin: 0 0 0 7px!important;
   }
 }
 
@@ -319,6 +367,16 @@ border-bottom-right-radius: 5%;
   }
   .scrollContent{
     height: 154px!important;
+  }
+  .scrollbarInnerContainer {
+    background-color: #ffffff;
+    max-width: 300px;
+    border-bottom-left-radius: 10%;
+    margin-left: 0%;
+    border-top-right-radius: 5%;
+  }
+  .timeZoneSelector span {
+    width: 80%;
   }
 }
 
@@ -351,6 +409,11 @@ border-bottom-right-radius: 5%;
     font-size: 2.0rem!important;
     margin: 0px 0 0px 0!important;
   }
+  .timeZoneSelector {
+    font-size: 12px;
+    width: 60%;
+  }
+  
 }
 
 @media only screen and (max-width: 600px) {
@@ -375,7 +438,7 @@ border-bottom-right-radius: 5%;
       border-radius: 50%!important;
       background-color: #ffffff!important;
       color: #5254CB;
-      margin: 1px 16px 0 16px!important;
+      margin: 0px 0 0 2px!important;
   }
   .daysTable{
     width: 99%;
@@ -405,7 +468,7 @@ border-bottom-right-radius: 5%;
       border-radius: 50%!important;
       background-color: #ffffff!important;
       color: #5254CB;
-      margin: 1px 17px 0 18px!important;
+      margin: 0px 0 0 2px!important;
 
   }
 }
