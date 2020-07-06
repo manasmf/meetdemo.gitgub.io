@@ -174,7 +174,7 @@ th {
 }
 .buttonContainer {
   flex-grow: 100;
-  padding: 3px 3px 3px 8%;
+  padding: 3px 3px 3px 9%;
   display: flex;
   float: left;
   width: 100%;
@@ -428,10 +428,10 @@ th {
   }
   .timeZoneSelector {
     font-size: 1rem;    
-    margin-left: 6%!important;
+    margin-left: 9%!important;
   }
   .timeZoneSelector span {
-    width: 80%;
+    width: 90%;
   }
   .mainContainer {
     width: 100%!important;
@@ -474,7 +474,7 @@ th {
   }
   .timeZoneSelector {
     font-size: 1rem;
-    width: 60%;
+    width: 70%;
   }  
   .hideBackButton{
     display: none!important;
@@ -562,7 +562,7 @@ th {
       margin: 1px 16px 0 16px!important;
   }
   .scrollContent {
-    height: 58vh!important;
+    height: 57vh!important;
   }
 }
 
