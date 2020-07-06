@@ -8,21 +8,16 @@
   background-size: cover;
   font-weight:  500!important;
 }
-
 .top {
   display: flex;
   justify-content: center;
+  height: 60px!important;
+  margin-bottom:24px!important;
 }
-
 .previous {
-  order: 1;
-  position: relative;
-  height: 20px;
-  padding: 5px 10px 5px 0px!important;
-  width: 25%;
   cursor: pointer;
-  font-weight:  500!important;
   text-align: right!important;
+  padding-top: 10px!important;
 }
 
 .previous:hover {
@@ -30,13 +25,8 @@
 }
 
 .next {
-  order: 3;
-  position: relative;
-  padding: 5px 0px 5px 10px!important;
-  text-align: left!important;
-  width: 25%;
   cursor: pointer;
-  font-weight:  500!important;
+  padding-top: 10px!important;
 }
 
 .next:hover {
@@ -83,9 +73,6 @@
 }
 
 .header-month {
-  font-size: 1rem;
-  position: relative;
-  font-weight:  500!important;
   color: #ffffff;
 }
 
@@ -95,38 +82,33 @@
   font-weight:  500!important;
   color: #ffffff;
 }
-
 .calendarHeader {
   order: 2;
-  padding: 2px!important;
   font-weight:  600!important;
   color: #ffffff;
 }
-
 .calendarHeader:hover {
   color: #ada9a9;
   font-weight:  500!important;
 }
-
 #header-position {
   display: flex;
   justify-content: center;
-  font-weight:  500!important;
-  color: #ffffff;
+  font-weight: 700!important;
+  color: #ffffff;  
 }
-
+.meetingTitle{
+  height: 40px;
+}
 .header-only-year {
   position: relative;
 }
-
 .month-tableCell:hover {
   color: #d5def7;
-} 
-
+}
 .thisMonth {
   color: blue
 }
-
 .month {
   width: 600px;
   margin-left: 45%;
@@ -155,21 +137,17 @@ th {
   border-bottom: none !important;
   color: #ffffff!important;
 }
-.App {
-  font-family: 'Calibri', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-  font-weight:  500!important;
-  color: grey;
-  display: flex;
-  justify-content: center;
-  width: 100%;
+.App, body, html {
+  height: 100%;
+  margin: 0px;
+  background-color:#e3e2ff; 
+  border: 1px solid transparent;
 }
-
 .elipse-text {
     height: 24px;
     line-height: 24px;
     text-align: center;
     vertical-align: middle;
-    border-radius: 50%!important;
     background-color: #ffffff!important;
     color: #5254CB;
     margin: 0 13px 0 14px!important;
@@ -180,35 +158,19 @@ th {
 .leftContainer 
 {
   background-color: #5254CB;
-  -moz-border-radius-topleft: 5%;
-	-webkit-border-top-left-radius: 5%;
-  border-top-left-radius: 5%;
-  
-  -moz-border-radius-bottomleft: 5%;
-	-webkit-border-bottom-left-radius: 5%;
-	border-bottom-left-radius: 5%;
 }
 .scrollbarInnerContainer 
 {
   background-color: #ffffff;
-  max-width: 300px;
-  border-bottom-left-radius: 10%;
-  margin-left: 5%;
 }
 .rightContainer
 {
--moz-border-radius-topright: 5%;
--webkit-border-top-right-radius: 5%;
-border-top-right-radius: 5%;
--moz-border-radius-bottomright: 5%;
--webkit-border-bottom-right-radius: 5%;
-border-bottom-right-radius: 5%;
 }
 .avtarContainer {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 20px 0 20px 0;
+    padding: 45px 0 10px 0;
 }
 .buttonContainer {
   flex-grow: 100;
@@ -220,33 +182,43 @@ border-bottom-right-radius: 5%;
 .slotsButtonContainer {
   flex-grow: 100;
   padding: 3px;
-  display: flex;
-  justify-content: center;
+  margin-left:9%;
 }
 .toggleSlotButtonLeft {
   background-color: #f9fbfc!important;
   width: 30%!important;
-  font-size: 0.55em!important;
+  font-size: 0.80em!important;
   padding: 6px 4px!important;
   min-height: 24px!important;
   border-radius: 5px 0px 0px 5px!important;
   text-transform: none!important;
 }
+
+.toggleSlotButtonLeft:hover {
+  background-color: #ffffff!important;
+}
+
 .toggleSlotButtonRight {
   background-color: #f9fbfc!important;
   width: 30%!important;
-  font-size: 0.55em!important;
+  font-size: 0.80em!important;
   padding: 6px 4px!important;
   min-height: 24px!important;
   border-radius: 0px 5px 5px 0px!important;
   text-transform: none!important;
 }
+
+.toggleSlotButtonRight:hover {
+  background-color: #ffffff!important;
+}
+
 .slotButton{
   border-radius: 2px;
   border: 2px solid #427cc4;
   background-color: #427cc4;
-  width: 85%;
+  width: 94%;
   text-transform: none!important;
+  height: 50px;
 }
 .typographyText {
   font-size: 0.7em!important;
@@ -256,24 +228,21 @@ border-bottom-right-radius: 5%;
   padding: 0 0 0% 5%;
 }
 .scrollContent{
-  height: 132px!important;  
+  height: 50vh!important;
+  width: 92%!important;
 }
 .slotContent{
   max-height: 60%!important;
 }
 .daysTable{
   width: 99%;
-  border-radius: 5%;
-  -moz-border-radius-bottomleft: 5%;
-  -webkit-border-bottom-left-radius: 5%;
 }
 .mainContainer {
   width: 60%!important;
-  top: 20px;
-  margin: auto;
-  position: absolute;
   background-color: transparent!important;
   justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .closeTimeZoneSelector{
@@ -293,19 +262,18 @@ border-bottom-right-radius: 5%;
   font-size: 3.5rem!important;
   text-align: center;
   font-weight: 500!important;
-  margin: 10px 0 30px 0!important;
+  margin: 10px 0 10px 0!important;
   color: #0a3a81!important;
 }
 
 .innerContainer {
   width: 100%;
-  border-radius: 5%!important; 
+  height:100%!important;
 }
 
 .popper {
   border: 1px solid rgba(27,31,35,.15);
   box-shadow: 0 3px 12px rgba(27,31,35,.15);
-  border-radius: 3;
   width: 250px;
   z-index: 1;
   font-size: 13;
@@ -314,13 +282,13 @@ border-bottom-right-radius: 5%;
 }
 
 .timeZoneSelector {
-  font-size: 13px;
+  font-size: 1rem;
   width: 80%;
   text-align: left;
   padding: 5px 0px 10px 0!important;
   margin-left: 8%!important;
-  color: #0366d6!important;
-  font-weight: 600;
+  color: #91c5c3!important;
+  font-weight: 550;
 }
 
 .timeZoneSelector:hover {
@@ -336,8 +304,82 @@ border-bottom-right-radius: 5%;
   width: 16px;
   height: 16px;
 }
+.typographyh4 {
+  font-size: 1.4rem!important;
+  font-style: normal;
+  font-weight: 550!important;
+  text-align: center;
+  color: #ffffff!important;
+  line-height: 50px!important;
+}
+.monthContainer{  
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  margin-bottom: 24px!important;
+  font-size: 1.4rem!important;
+  font-weight: 550!important;
+  color: #ffffff!important;
+}
 
-@media only screen and (min-width: 1025px) {
+.leftContainerOpen{
+  display: none!important;
+}
+.leftContainerClose{
+  display: block!important;
+}
+.rightContainerOpen{
+  display: none!important;
+}
+.rightContainerClose{
+  display: none!important;
+}
+.hideBackButton{
+  display: block!important;
+}
+.showBackButton{
+  display: block!important;
+}
+
+.toggleCalendarButton {
+  background-color: #f9fbfc!important;
+  width: 30%!important;
+  font-size: 0.75em!important;
+  padding: 6px 4px!important;
+  min-height: 24px!important;
+  border-radius: 5px 0px 0px 5px!important;
+  text-transform: none!important;
+  margin: 15px 0 15px 3px!important;
+}
+
+.footerText {
+  font-size: 0.65rem;
+  color: #1e615f!important;
+  font-weight: 550;
+  justify-content: center;
+  display: flex;
+  padding:10px 0 10px 0;
+  background-color: #e3e2ff!important;  
+}
+
+.footerText a:link, .footerText a:visited {
+  color: #2fa8a4!important;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .mainContainer {
+    width: 100%!important;
+    justify-content: center;
+    display: flex!important;
+  }
+  .scrollContent{
+    height: 22vh!important;
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
   .holidays {
     text-align: center!important;
   }
@@ -350,7 +392,19 @@ border-bottom-right-radius: 5%;
       border-radius: 50%!important;
       background-color: #ffffff!important;
       color: #5254CB;
-      margin: 0 0 0 7px!important;
+      margin: 0 0 0 1px!important;
+  }
+  .hideBackButton{
+    display: none!important;
+  }
+  .leftContainerOpen{
+    display:block!important;
+  }
+  .rightContainerOpen{
+    display:block!important;
+  }  
+  .rightContainerClose{
+    display:block!important;
   }
 }
 
@@ -363,57 +417,80 @@ border-bottom-right-radius: 5%;
       border-radius: 50%!important;
       background-color: #ffffff!important;
       color: #5254CB;
-      margin: 0 9px 0 7px!important;
+      margin: 0 0px 0 0px!important;
   }
   .scrollContent{
-    height: 154px!important;
+    height: 332px!important;
   }
   .scrollbarInnerContainer {
     background-color: #ffffff;
-    max-width: 300px;
-    border-bottom-left-radius: 10%;
     margin-left: 0%;
-    border-top-right-radius: 5%;
+  }
+  .timeZoneSelector {
+    font-size: 1rem;    
+    margin-left: 6%!important;
   }
   .timeZoneSelector span {
     width: 80%;
+  }
+  .mainContainer {
+    width: 100%!important;
+    background-color: transparent!important;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 100%;
+    min-height: 100%;
+  }  
+  .hideBackButton{
+    display: none!important;
+  }
+  .leftContainerOpen{
+    display:block!important;
+  }
+  .rightContainerOpen{
+    display:block!important;
+  }
+  .rightContainerClose{
+    display:block!important;
   }
 }
 
 
 @media only screen and (max-width: 767px) {
-  .innerContainer {
-    
-    -moz-border-radius-topleft: 5%;
-    -webkit-border-top-left-radius: 5%;
-
-    -moz-border-radius-bottomleft: 5%;
-    -webkit-border-bottom-left-radius: 5%;
-
-    -moz-border-radius-topright: 5%;
-    -webkit-border-top-right-radius: 5%;
-
-    -moz-border-radius-bottomright: 5%;
-    -webkit-border-bottom-right-radius: 5%;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
-    border-bottom-left-radius: 5%;
-    border-bottom-right-radius: 5%;
-  }
+  
   .mainContainer {
     width: 100%!important;
-    top: 0px;
+    background-color: transparent!important;
     justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 100%;
+    min-height: 100%;
   }
   .appTitle {
     font-size: 2.0rem!important;
     margin: 0px 0 0px 0!important;
   }
   .timeZoneSelector {
-    font-size: 12px;
+    font-size: 1rem;
     width: 60%;
+  }  
+  .hideBackButton{
+    display: none!important;
   }
-  
+  .leftContainerOpen{
+    display:block!important;
+  }
+  .rightContainerOpen{
+    display:block!important;
+  }
+  .rightContainerClose{
+    display:none!important;
+  }
+  .scrollContent{
+    height: 332px!important;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -426,6 +503,15 @@ border-bottom-right-radius: 5%;
       background-color: #ffffff!important;
       color: #5254CB;
       margin: 0 16px 0 15px!important;
+  }
+  .typographyh4{
+    font-size: 0.9rem
+  }
+  .hideBackButton{
+    display: block!important;
+  }
+  .leftContainerOpen{
+    display:none!important;
   }
 }
 
@@ -442,22 +528,11 @@ border-bottom-right-radius: 5%;
   }
   .daysTable{
     width: 99%;
-    border-radius: 5%;
-    -moz-border-radius-topleft: 5%;
-    -webkit-border-bottom-left-radius: 0%;
   }
   .leftContainer{
     background-color: #5254CB;
-    -moz-border-radius-topleft: 5%;
-    -webkit-border-top-left-radius: 5%;
-    border-top-left-radius: 5%;    
-    -moz-border-radius-topright: 5%;
-    -webkit-border-top-right-radius: 5%;
-    border-top-right-radius: 5%;
-  }  
+  }
 }
-
-
 
 @media only screen and (max-width: 414px) {
   .elipse-text {
@@ -469,7 +544,9 @@ border-bottom-right-radius: 5%;
       background-color: #ffffff!important;
       color: #5254CB;
       margin: 0px 0 0 2px!important;
-
+  }
+  .scrollContent {
+    height: 53vh!important;
   }
 }
 
@@ -483,7 +560,9 @@ border-bottom-right-radius: 5%;
       background-color: #ffffff!important;
       color: #5254CB;
       margin: 1px 16px 0 16px!important;
-
+  }
+  .scrollContent {
+    height: 58vh!important;
   }
 }
 
@@ -497,7 +576,9 @@ border-bottom-right-radius: 5%;
       background-color: #ffffff!important;
       color: #5254CB;
       margin: 1px 16px 0 15px!important;
-
+  }
+  .scrollContent {
+    height: 58vh!important;
   }
 }
 
@@ -512,6 +593,19 @@ border-bottom-right-radius: 5%;
       color: #5254CB;
       margin: 0px 15px 0 14px!important;
   }
+  .timeZoneSelector {
+    font-size: 14px;
+    margin-left: 6%!important;
+    width: 62%;
+  }
+  .scrollContent {
+    height: 47vh!important;
+  }
+  .mainContainer {
+    display:flex;
+    width: 100%!important;
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -525,8 +619,8 @@ border-bottom-right-radius: 5%;
       color: #5254CB;
       margin: 0px 12px 0 10px!important;
   }
-  .scrollbarInnerContainer{
-    max-width: 74%;
+  .scrollContent {
+    height: 42vh!important;
   }
 }
 
