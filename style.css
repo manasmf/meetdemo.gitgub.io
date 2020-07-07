@@ -21,7 +21,7 @@
 }
 
 .previous:hover {
-  color: blue;
+  color: #fff;
 }
 
 .next {
@@ -30,7 +30,7 @@
 }
 
 .next:hover {
-  color: blue;
+  color: #fff;
 }
 
 .holidays {
@@ -86,6 +86,8 @@
   order: 2;
   font-weight:  600!important;
   color: #ffffff;
+  font-family: monospace;
+  font-size: 1.7rem;
 }
 .calendarHeader:hover {
   color: #ada9a9;
@@ -228,7 +230,7 @@ th {
   padding: 0 0 0% 5%;
 }
 .scrollContent{
-  height: 50vh!important;
+  height: 44vh!important;
   width: 92%!important;
 }
 .slotContent{
