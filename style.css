@@ -594,7 +594,7 @@ th {
       border-radius: 50%!important;
       background-color: #ffffff!important;
       color: #5254CB;
-      margin: 1px 16px 0 16px!important;
+      margin: 0 0 0 0!important;
   }
   .scrollContent {
     height: 57vh!important;
@@ -672,7 +672,7 @@ th {
       border-radius: 50%!important;
       background-color: #ffffff!important;
       color: #5254CB;
-      margin: 0px 12px 0 10px!important;
+      margin: 0px 0 0 0!important;
   }
   .scrollContent {
     height: 42vh!important;
