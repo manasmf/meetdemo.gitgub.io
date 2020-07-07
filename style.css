@@ -44,7 +44,7 @@
   
 }
 
-.chosenDay {
+.futureDay {
   color:#ffffff!important;
   font-weight: 500!important;
   cursor: pointer;
@@ -54,7 +54,7 @@
   border-bottom-width: 2;
 }
 
-.chosenDay:hover {
+.futureDay:hover {
   color: #d5def7!important;
   font-weight:  500!important;
 }
@@ -283,10 +283,10 @@ th {
 
 .timeZoneSelector {
   font-size: 1rem;
-  width: 80%;
+  width: 78%;
   text-align: left;
   padding: 5px 0px 10px 0!important;
-  margin-left: 8%!important;
+  margin-left: 9%!important;
   color: #91c5c3!important;
   font-weight: 550;
 }
