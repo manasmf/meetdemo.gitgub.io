@@ -142,7 +142,7 @@ th {
 .App, body, html {
   height: 100%;
   margin: 0px;
-  background-color:#e3e2ff; 
+  background-color:#f0effd; 
   border: 1px solid transparent;
 }
 .elipse-text {
@@ -361,7 +361,7 @@ th {
   justify-content: center;
   display: flex;
   padding:10px 0 10px 0;
-  background-color: #e3e2ff!important;  
+  background-color: #f4f4fc!important;  
 }
 
 .footerText a:link, .footerText a:visited {
@@ -597,11 +597,11 @@ th {
   }
   .timeZoneSelector {
     font-size: 14px;
-    margin-left: 6%!important;
-    width: 62%;
+    margin-left: 9%!important;
+    width: 80%;
   }
   .scrollContent {
-    height: 47vh!important;
+    height: 54vh!important;
   }
   .mainContainer {
     display:flex;
