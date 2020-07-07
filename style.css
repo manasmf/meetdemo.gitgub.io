@@ -87,7 +87,7 @@
   font-weight:  600!important;
   color: #ffffff;
   font-family: monospace;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 .calendarHeader:hover {
   color: #ada9a9;
@@ -144,6 +144,7 @@ th {
   margin: 0px;
   background-color:#f0effd; 
   border: 1px solid transparent;
+  overflow: hidden;
 }
 .elipse-text {
     height: 24px;
@@ -456,6 +457,12 @@ th {
   .rightContainerClose{
     display:block!important;
   }
+  .calendarHeader {
+    font-size: 1.5rem;
+  }
+  .typographyh4 {
+    font-size: 1.5rem!important;
+  }
 }
 
 
@@ -493,6 +500,12 @@ th {
   .scrollContent{
     height: 332px!important;
   }
+  .calendarHeader {
+    font-size: 1.5rem;
+  }
+  .typographyh4 {
+    font-size: 1.5rem!important;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -515,6 +528,12 @@ th {
   .leftContainerOpen{
     display:none!important;
   }
+  .calendarHeader {
+    font-size: 1.5rem;
+  }
+  .typographyh4 {
+    font-size: 1.5rem!important;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -534,6 +553,12 @@ th {
   .leftContainer{
     background-color: #5254CB;
   }
+  .calendarHeader {
+    font-size: 1.3rem;
+  }
+  .typographyh4 {
+    font-size: 1.3rem!important;
+  }
 }
 
 @media only screen and (max-width: 414px) {
@@ -549,6 +574,12 @@ th {
   }
   .scrollContent {
     height: 53vh!important;
+  }
+  .calendarHeader {
+    font-size: 1.3rem;
+  }
+  .typographyh4 {
+    font-size: 1.3rem!important;
   }
 }
 
@@ -566,21 +597,34 @@ th {
   .scrollContent {
     height: 57vh!important;
   }
+  .calendarHeader {
+    font-size: 1.3rem;
+  }
+  .typographyh4 {
+    font-size: 1.3rem!important;
+  }
 }
 
 @media only screen and (max-width: 375px) {
   .elipse-text {
       height: 24px;
+      width: 24px;
       line-height: 24px;
       text-align: center;
       vertical-align: middle;
       border-radius: 50%!important;
       background-color: #ffffff!important;
       color: #5254CB;
-      margin: 1px 16px 0 15px!important;
+      margin: 0px 0px 0 0px!important;
   }
   .scrollContent {
     height: 58vh!important;
+  }
+  .calendarHeader {
+    font-size: 1.2rem;
+  }
+  .typographyh4 {
+    font-size: 1.2rem!important;
   }
 }
 
@@ -588,12 +632,13 @@ th {
   .elipse-text {
       height: 24px;
       line-height: 24px;
+      width: 24px;
       text-align: center;
       vertical-align: middle;
       border-radius: 50%!important;
       background-color: #ffffff!important;
       color: #5254CB;
-      margin: 0px 15px 0 14px!important;
+      margin: 0px 0px 0 0px!important;
   }
   .timeZoneSelector {
     font-size: 14px;
@@ -607,6 +652,12 @@ th {
     display:flex;
     width: 100%!important;
     justify-content: center;
+  }
+  .calendarHeader {
+    font-size: 1.2rem;
+  }
+  .typographyh4 {
+    font-size: 1.2rem!important;
   }
 }
 
@@ -623,6 +674,12 @@ th {
   }
   .scrollContent {
     height: 42vh!important;
+  }
+  .calendarHeader {
+    font-size: 1.2rem;
+  }
+  .typographyh4 {
+    font-size: 1.2rem!important;
   }
 }
 
